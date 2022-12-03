@@ -1,0 +1,296 @@
+<html>
+    <head>
+
+    <style>
+        @font-face {
+            font-family: HandelsonTwo;
+            src: url("Handelson/Handelson-Two.otf") format("opentype");
+        }
+
+        #card div {
+            position: absolute;
+        }
+
+        #name {
+            top:140px;
+            left:260px;
+            width: 500px;
+            font-family: HandelsonTwo;
+            color: yellow;
+            font-size: 54px;
+            text-align: center;
+        }
+
+        #factions {
+            top: 195px;
+            left:260px;
+            width: 500px;
+            font-family: "Futura-Bold", Helvetica, sans-serif;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        #unique {
+            top: 68px;
+            left: 60px;
+        }
+
+        #movement {
+            top: 185px;
+            left: 70px;
+        }
+
+        .skills {
+            text-align: right;
+            left: 200px;
+            width: 425px;
+        }
+        .skills img {
+            padding-left: 10px;
+        }
+
+        .values {
+            left: 650px;
+            font-family: "Futura";
+            font-size: 36px;
+        }
+
+        .values span {
+            font-family: "Futura";
+            font-size: 22px;
+        }
+
+        #str-skills {
+            top: 250px;
+        }
+
+        #str-value {
+            top: 260px;
+        }
+
+        #per-skills {
+            top: 315px;
+        }
+
+        #per-value {
+            top: 330px;
+        }
+
+        #end-skills {
+            top: 390px;
+        }
+
+        #end-value {
+            top: 400px;
+        }
+
+        #cha-skills {
+            top: 460px;
+        }
+
+        #cha-value {
+            top: 470px;
+        }
+
+        #int-skills {
+            top: 530px;
+        }
+
+        #int-value {
+            top: 540px;
+        }
+
+        #agi-skills {
+            top: 600px;
+        }
+
+        #agi-value {
+            top: 610px;
+        }
+
+        #luc-skills {
+            top: 670px;
+        }
+
+        #luc-value {
+            top: 680px;
+        }
+
+        .armor-icon {
+            position: absolute;
+            left: 600px;
+        }
+
+        #arm-phs-icon {
+            top: 770px;
+        }
+
+        #arm-eng-icon {
+            top: 840px;
+        }
+
+        #arm-rad-icon {
+            top: 910px;
+        }
+
+        .arm-values {
+            left: 680px;
+            font-family: "Futura";
+            font-size: 36px;
+            width: 75px;
+            text-align: center;
+        }
+
+        #arm-phs {
+            top: 775px;
+        }
+
+        #arm-eng {
+            top: 845px;
+        }
+
+        #arm-rad {
+            top: 915px;
+        }
+
+        #attributes {
+            top: 1030px;
+            left: 90px;
+        }
+
+        #attributes img {
+            padding-right: 10px;
+        }
+
+        #abilities {
+            top: 750px;
+            left: 80px;
+            width: 480px;
+            font-family: "Futura";
+            font-size: 22px;
+        }
+        
+    </style>
+    <script src="cardbuilder.js"></script>
+    </head>
+    <body onload="initialize()">
+        <div id="card">
+            <div id="name">SOLE SURVIVOR</div>
+            <div id="factions">SURVIVOR</div>
+            <div id="unique"><img src="images/unique.png" /></div>
+            <div id="movement"><img src="images/Charge (Yellow Range).png" /><img src="images/Charge (Red Range).png" /></div>
+            <div id="str-skills" class="skills"><img src="images/Heavy Weapon.png" /><img src="images/Melee.png" /></div>
+            <div id="str-value" class="values">S<span>TR</span> 5</div>
+            <div id="per-skills" class="skills"><img src="images/Pistol.png" /><img src="images/Rifle.png" /></div>
+            <div id="per-value" class="values">P<span>ER</span> 7</div>
+            <div id="end-skills" class="skills"><img src="images/Resist Battle Cry.png" /></div>
+            <div id="end-value" class="values">E<span>ND</span> 4</div>
+            <div id="cha-skills" class="skills"><img src="images/Resist Battle Cry.png" /><img src="images/Presence (Blue Range).png" /></div>
+            <div id="cha-value" class="values">C<span>HA</span> 5</div>
+            <div id="int-skills" class="skills"><img src="images/Computers (Expertise).png" /><img src="images/Search (Expertise).png" /></div>
+            <div id="int-value" class="values">I<span>NT</span> 7</div>
+            <div id="agi-skills" class="skills"><img src="images/Throw (Green Range).png" /><img src="images/Lockpick (Expertise).png" /><img src="images/Health.png" /></div>
+            <div id="agi-value" class="values">A<span>GI</span> 7</div>
+            <div id="luc-skills" class="skills"><img src="images/Computers (Expertise).png" /></div>
+            <div id="luc-value" class="values">L<span>UC</span> 4</div>
+            <div id="abilities">Vrage ghost paint horse revered dragon Asliel Direnni jot Brusef Amelion goblin shaman Pelagius Septim IV Malkoran's Shade. Ronax Bashomon bo brod Hermeskr od. Krif blue dartwing ni, Viana the Pure Mats ahraan zahkrii Roeth Veloth Brendan the Persistent kotin bonewalker mid. Jolethe Direnni Zurin Arctus haalvut Pelladil Direnni yoriik Hranvard Frostfinger qethsegol Rajhin sinon ok armored troll sunvaar unt.        </div>
+            <img id="arm-phs-icon" class="armor-icon" src="images/Armor (Physical).png" />
+            <div id="arm-phs" class="arm-values">3</div>
+            <img id="arm-eng-icon" class="armor-icon" src="images/Armor (Energy).png" />
+            <div id="arm-eng" class="arm-values">3</div>
+            <img id="arm-rad-icon" class="armor-icon" src="images/Armor (Radiation).png" />
+            <div id="arm-rad" class="arm-values">1</div>
+            <div id="attributes"><img src="images/Awareness (Black Range).png" /><img src="images/Prepare (Quick Action).png" /><img src="images/Dog Handler (Aura Ability).png" /></div>
+            <img src="images/CARD FRONT.png" />
+        </div>
+        <div id="controls">
+            <div id="main">
+                <span>Name:</span><input type="text" id="name-in" name="name-in" value="Wastelander" oninput="updateValues()"/>
+                <span>Factions:</span><input type="text" id="factions-in" name="factions-in" value="Survivors" oninput="updateValues()"/>
+                <span>Unique?:</span><input type="checkbox" id="unique-in" name="unique-in" oninput="updateValues()"/>
+            </div>
+            <div id="stats">
+                <h2>Movement</h2>
+                Move: <select id="move" oninput="updateValues()">
+                    <option>Yellow</option>
+                    <option>Red</option>
+                    <option>Green</option>
+                    <option>Blue</option>
+                </select>
+                Charge: <select id="charge" oninput="updateValues()">
+                    <option>Yellow</option>
+                    <option>Red</option>
+                    <option>Green</option>
+                    <option>Blue</option>
+                </select>
+                <h2>Stats</h2>
+                <span>Str:</span><input type="number" id="str" name="str" min="1" max="10" value="5" oninput="updateValues()"/>
+                <span>Per:</span><input type="number" id="per" name="per" min="1" max="10" value="5" oninput="updateValues()"/>
+                <span>End:</span><input type="number" id="end" name="end" min="1" max="10" value="5" oninput="updateValues()"/>
+                <span>Cha:</span><input type="number" id="cha" name="cha" min="1" max="10" value="5" oninput="updateValues()"/>
+                <span>Int:</span><input type="number" id="int" name="int" min="1" max="10" value="5" oninput="updateValues()"/>
+                <span>Agi:</span><input type="number" id="agi" name="agi" min="1" max="10" value="5" oninput="updateValues()"/>
+                <span>Luc:</span><input type="number" id="luc" name="luc" min="1" max="10" value="5" oninput="updateValues()"/>
+                <h2>Armor</h2>
+                <span>Physical:</span><input type="text" id="arm-phs-in" name="arm-phs-in" value="-" maxlength="3" size="3" oninput="updateValues()"/>
+                <span>Energy:</span><input type="text" id="arm-eng-in" name="arm-eng-in" value="-" maxlength="3" size="3" oninput="updateValues()"/>
+                <span>Radiation:</span><input type="text" id="arm-rad-in" name="arm-rad-in" value="-" maxlength="3" size="3" oninput="updateValues()"/>
+            </div>
+            <div id="skills">
+                Health: <select id="skills-health" oninput="updateValues()"></select>
+                Heavy Weapons: <select id="skills-heavyweapons" oninput="updateValues()"></select>
+                Melee: <select id="skills-melee" oninput="updateValues()"></select>
+                Pistol: <select id="skills-pistol" oninput="updateValues()"></select>
+                Rifle: <select id="skills-rifle" oninput="updateValues()"></select>
+                Expertise (Computers): <select id="skills-computers" oninput="updateValues()"></select>
+                Expertise (Search): <select id="skills-search" oninput="updateValues()"></select>
+                Expertise (Lockpick): <select id="skills-lockpick" oninput="updateValues()"></select>
+                Presence: <select id="skills-presence" oninput="updateValues()"></select>
+                Presence Range: <select id="skills-presence-range" oninput="updateValues()">
+                    <option>Yellow</option>
+                    <option>Red</option>
+                    <option>Green</option>
+                    <option>Blue</option>
+                    <option>Black</option>
+                </select>
+                Throw: <select id="skills-thrown" oninput="updateValues()"></select>
+                Throw Range: <select id="skills-thrown-range" oninput="updateValues()">
+                    <option>Green</option>
+                    <option>Blue</option>
+                    <option>Black</option>
+                </select>
+                Battlecry Resist: <select id="skills-battlecryresist" oninput="updateValues()"></select>
+                Battlecry: <select id="skills-battlecry" oninput="updateValues()"></select>
+                Battlecry Range: <select id="skills-battlecry-range" oninput="updateValues()">
+                    <option>Orange</option>
+                    <option>Yellow</option>
+                </select>
+            </div>
+            <textarea id="specialRules" name="specialRules" rows="4" cols="50" oninput="updateValues()">
+            </textarea>
+            <div>
+                Awareness: <select id="awareness-range" oninput="updateValues()">
+                    <option>Yellow</option>
+                    <option>Red</option>
+                    <option>Green</option>
+                    <option>Blue</option>
+                    <option>Black</option>
+                </select>
+                <h3>Quick Actions</h3>
+                <span>Prepare:</span><input type="checkbox" id="quick-prepare" name="quick-prepare" oninput="updateValues()"/>
+                <span>Move:</span><input type="checkbox" id="quick-move" name="quick-move" oninput="updateValues()"/>
+                <span>Attack:</span><input type="checkbox" id="quick-attack" name="quick-attack" oninput="updateValues()"/>
+                <span>Expertise:</span><input type="checkbox" id="quick-expertise" name="quick-expertise" oninput="updateValues()"/>
+
+                <h2>Special Abilities</h2>
+                <span>Immune to Battle Cry:</span><input type="checkbox" id="battlecry-immunity" name="battlecry-immunity" oninput="updateValues()"/>
+                <span>Unable To Climb:</span><input type="checkbox" id="unable-to-climb" name="unable-to-climb" oninput="updateValues()"/>
+                <span>Unimpeded:</span><input type="checkbox" id="unimpeded" name="unimpeded" oninput="updateValues()"/>
+                <span>Dog Handler:</span><input type="checkbox" id="dog-handler" name="dog-handler" oninput="updateValues()"/>
+                <span>Critical:</span><input type="checkbox" id="critical" name="critical" oninput="updateValues()"/>
+                <span>Lucky:</span><input type="checkbox" id="lucky" name="lucky" oninput="updateValues()"/>
+            </div>
+        </div>
+    </body>
+</html>
